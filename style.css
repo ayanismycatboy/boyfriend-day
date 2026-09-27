@@ -6,6 +6,7 @@
 
 body {
     min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +25,7 @@ body {
 
 
 /* =========================
-   MAIN HOME SCREEN
+   MAIN HOME BOX
    ========================= */
 
 .container {
@@ -83,7 +84,6 @@ button {
     padding: 15px 35px;
 
     border: none;
-
     border-radius: 30px;
 
     background: #e98aaa;
@@ -96,9 +96,7 @@ button {
 
     cursor: pointer;
 
-    transition: transform 0.3s ease,
-                background 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: 0.3s ease;
 }
 
 button:hover {
@@ -111,7 +109,7 @@ button:hover {
 
 
 /* =========================
-   PINK HEART IMAGES
+   HEART IMAGES
    ========================= */
 
 .heart {
@@ -131,121 +129,105 @@ button:hover {
 }
 
 
-/* =========================
-   HEART 1
-   ========================= */
+/* BIG TOP LEFT */
 
 .heart1 {
-    width: 65px !important;
-    height: 65px !important;
+    width: 100px !important;
+    height: 100px !important;
 
-    top: 7%;
-    left: 8%;
+    top: 5%;
+    left: 6%;
 
     transform: rotate(-15deg);
 }
 
 
-/* =========================
-   HEART 2
-   ========================= */
+/* BIG TOP RIGHT */
 
 .heart2 {
-    width: 85px !important;
-    height: 85px !important;
+    width: 130px !important;
+    height: 130px !important;
 
-    top: 9%;
-    right: 9%;
+    top: 7%;
+    right: 7%;
 
     transform: rotate(20deg);
 }
 
 
-/* =========================
-   HEART 3
-   ========================= */
+/* LEFT SIDE */
 
 .heart3 {
-    width: 45px !important;
-    height: 45px !important;
+    width: 70px !important;
+    height: 70px !important;
 
-    top: 45%;
-    left: 5%;
+    top: 42%;
+    left: 3%;
 
-    transform: rotate(10deg);
+    transform: rotate(12deg);
 }
 
 
-/* =========================
-   HEART 4
-   ========================= */
+/* RIGHT SIDE */
 
 .heart4 {
-    width: 65px !important;
-    height: 65px !important;
+    width: 100px !important;
+    height: 100px !important;
 
-    top: 50%;
-    right: 6%;
+    top: 48%;
+    right: 3%;
 
     transform: rotate(-20deg);
 }
 
 
-/* =========================
-   HEART 5
-   ========================= */
+/* BIG BOTTOM LEFT */
 
 .heart5 {
-    width: 80px !important;
-    height: 80px !important;
+    width: 120px !important;
+    height: 120px !important;
 
-    bottom: 9%;
-    left: 10%;
+    bottom: 5%;
+    left: 7%;
 
     transform: rotate(15deg);
 }
 
 
-/* =========================
-   HEART 6
-   ========================= */
+/* BOTTOM RIGHT */
 
 .heart6 {
-    width: 50px !important;
-    height: 50px !important;
+    width: 75px !important;
+    height: 75px !important;
 
-    bottom: 7%;
-    right: 12%;
+    bottom: 5%;
+    right: 10%;
 
     transform: rotate(-10deg);
 }
 
 
-/* =========================
-   HEART 7
-   ========================= */
+/* SMALLER HEART NEAR TOP LEFT */
 
 .heart7 {
-    width: 38px !important;
-    height: 38px !important;
+    width: 55px !important;
+    height: 55px !important;
 
-    top: 22%;
-    left: 25%;
+    top: 24%;
+    left: 23%;
 
     transform: rotate(-25deg);
 }
 
 
-/* =========================
-   HEART 8
-   ========================= */
+/* SMALLER HEART NEAR TOP RIGHT */
 
 .heart8 {
-    width: 45px !important;
-    height: 45px !important;
+    width: 65px !important;
+    height: 65px !important;
 
-    top: 25%;
-    right: 25%;
+    top: 27%;
+    right: 23%;
 
     transform: rotate(15deg);
 }
@@ -258,7 +240,7 @@ button:hover {
 @media (max-width: 600px) {
 
     .container {
-        width: 88%;
+        width: 86%;
 
         padding: 45px 25px;
     }
@@ -282,45 +264,43 @@ button:hover {
     }
 
 
-    /* Smaller hearts on phones */
-
     .heart1 {
-        width: 45px !important;
-        height: 45px !important;
+        width: 65px !important;
+        height: 65px !important;
     }
 
     .heart2 {
-        width: 55px !important;
-        height: 55px !important;
+        width: 80px !important;
+        height: 80px !important;
     }
 
     .heart3 {
-        width: 30px !important;
-        height: 30px !important;
-    }
-
-    .heart4 {
         width: 45px !important;
         height: 45px !important;
     }
 
+    .heart4 {
+        width: 65px !important;
+        height: 65px !important;
+    }
+
     .heart5 {
-        width: 55px !important;
-        height: 55px !important;
+        width: 75px !important;
+        height: 75px !important;
     }
 
     .heart6 {
+        width: 50px !important;
+        height: 50px !important;
+    }
+
+    .heart7 {
         width: 35px !important;
         height: 35px !important;
     }
 
-    .heart7 {
-        width: 25px !important;
-        height: 25px !important;
-    }
-
     .heart8 {
-        width: 30px !important;
-        height: 30px !important;
+        width: 40px !important;
+        height: 40px !important;
     }
 }

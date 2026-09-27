@@ -113,87 +113,96 @@ button:hover {
 
 /* Individual hearts */
 
+/* =========================
+   HEARTS
+   ========================= */
+
+.heart {
+    position: fixed !important;
+    z-index: 5 !important;
+    pointer-events: none;
+    object-fit: contain;
+}
+
+
+/* Top left */
 .heart1 {
-    width: 45px !important;
-    height: 45px !important;
-
-    top: 8%;
+    width: 65px !important;
+    height: 65px !important;
+    top: 7%;
     left: 8%;
-
     transform: rotate(-15deg);
 }
 
+
+/* Top right */
 .heart2 {
-    width: 60px !important;
-    height: 60px !important;
-
-    top: 10%;
-    right: 10%;
-
+    width: 85px !important;
+    height: 85px !important;
+    top: 9%;
+    right: 9%;
     transform: rotate(20deg);
 }
 
-.heart3 {
-    width: 30px !important;
-    height: 30px !important;
 
+/* Middle left */
+.heart3 {
+    width: 45px !important;
+    height: 45px !important;
     top: 45%;
     left: 5%;
-
     transform: rotate(10deg);
 }
 
-.heart4 {
-    width: 45px !important;
-    height: 45px !important;
 
+/* Middle right */
+.heart4 {
+    width: 65px !important;
+    height: 65px !important;
     top: 50%;
     right: 6%;
-
     transform: rotate(-20deg);
 }
 
+
+/* Bottom left */
 .heart5 {
-    width: 55px !important;
-    height: 55px !important;
-
-    bottom: 10%;
+    width: 80px !important;
+    height: 80px !important;
+    bottom: 9%;
     left: 10%;
-
     transform: rotate(15deg);
 }
 
+
+/* Bottom right */
 .heart6 {
-    width: 35px !important;
-    height: 35px !important;
-
-    bottom: 8%;
+    width: 50px !important;
+    height: 50px !important;
+    bottom: 7%;
     right: 12%;
-
     transform: rotate(-10deg);
 }
 
-.heart7 {
-    width: 25px !important;
-    height: 25px !important;
 
+/* Upper left-middle */
+.heart7 {
+    width: 38px !important;
+    height: 38px !important;
     top: 22%;
     left: 25%;
-
     transform: rotate(-25deg);
 }
 
-.heart8 {
-    width: 30px !important;
-    height: 30px !important;
 
+/* Upper right-middle */
+.heart8 {
+    width: 45px !important;
+    height: 45px !important;
     top: 25%;
     right: 25%;
-
     transform: rotate(15deg);
 }
-
-
 /* =========================
    PHONE
    ========================= */

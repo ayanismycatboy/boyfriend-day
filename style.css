@@ -9,6 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     font-family: Georgia, "Times New Roman", serif;
     text-align: center;
@@ -18,31 +19,27 @@ body {
     color: #5a3d4a;
 
     overflow: hidden;
-
-    position: relative;
 }
 
 
 /* =========================
-   MAIN HOME SCREEN
+   MAIN BOX
    ========================= */
 
 .container {
     position: relative;
-    z-index: 10;
+    z-index: 100;
 
     width: 90%;
     max-width: 650px;
 
     padding: 60px 35px;
 
-    background: rgba(255, 255, 255, 0.82);
+    background: rgba(255, 255, 255, 0.88);
 
     border-radius: 35px;
 
     box-shadow: 0 15px 40px rgba(100, 60, 90, 0.15);
-
-    backdrop-filter: blur(6px);
 }
 
 
@@ -52,25 +49,19 @@ body {
 
 .small-text {
     font-size: 17px;
-
     margin-bottom: 15px;
-
     letter-spacing: 1px;
 }
 
 h1 {
     font-size: 48px;
-
     margin-bottom: 20px;
-
     color: #593d4b;
 }
 
 .message {
     font-size: 20px;
-
     margin-bottom: 35px;
-
     line-height: 1.5;
 }
 
@@ -83,54 +74,48 @@ button {
     padding: 15px 35px;
 
     border: none;
-
     border-radius: 30px;
 
     background: #e98aaa;
-
     color: white;
 
     font-size: 18px;
-
     font-family: Georgia, "Times New Roman", serif;
 
     cursor: pointer;
 
-    transition: transform 0.3s ease,
-                background 0.3s ease,
-                box-shadow 0.3s ease;
+    transition: 0.3s;
 }
 
 button:hover {
     transform: scale(1.08);
-
     background: #d97598;
-
-    box-shadow: 0 8px 20px rgba(217, 117, 152, 0.3);
 }
 
 
 /* =========================
-   PINK HEART IMAGES
+   HEARTS
    ========================= */
 
 .heart {
-    position: fixed;
+    position: fixed !important;
 
-    z-index: 1;
+    z-index: 5 !important;
 
     pointer-events: none;
 
-    height: auto;
+    object-fit: contain;
 
-    user-select: none;
+    max-width: none !important;
+    max-height: none !important;
 }
 
 
-/* Top left */
+/* Individual hearts */
 
 .heart1 {
-    width: 55px;
+    width: 45px !important;
+    height: 45px !important;
 
     top: 8%;
     left: 8%;
@@ -138,23 +123,19 @@ button:hover {
     transform: rotate(-15deg);
 }
 
-
-/* Top right */
-
 .heart2 {
-    width: 80px;
+    width: 60px !important;
+    height: 60px !important;
 
-    top: 12%;
+    top: 10%;
     right: 10%;
 
     transform: rotate(20deg);
 }
 
-
-/* Middle left */
-
 .heart3 {
-    width: 35px;
+    width: 30px !important;
+    height: 30px !important;
 
     top: 45%;
     left: 5%;
@@ -162,11 +143,9 @@ button:hover {
     transform: rotate(10deg);
 }
 
-
-/* Middle right */
-
 .heart4 {
-    width: 60px;
+    width: 45px !important;
+    height: 45px !important;
 
     top: 50%;
     right: 6%;
@@ -174,49 +153,41 @@ button:hover {
     transform: rotate(-20deg);
 }
 
-
-/* Bottom left */
-
 .heart5 {
-    width: 75px;
+    width: 55px !important;
+    height: 55px !important;
 
     bottom: 10%;
-    left: 12%;
+    left: 10%;
 
     transform: rotate(15deg);
 }
 
-
-/* Bottom right */
-
 .heart6 {
-    width: 45px;
+    width: 35px !important;
+    height: 35px !important;
 
     bottom: 8%;
-    right: 15%;
+    right: 12%;
 
     transform: rotate(-10deg);
 }
 
-
-/* Upper left-middle */
-
 .heart7 {
-    width: 30px;
+    width: 25px !important;
+    height: 25px !important;
 
-    top: 25%;
+    top: 22%;
     left: 25%;
 
     transform: rotate(-25deg);
 }
 
-
-/* Upper right-middle */
-
 .heart8 {
-    width: 40px;
+    width: 30px !important;
+    height: 30px !important;
 
-    top: 30%;
+    top: 25%;
     right: 25%;
 
     transform: rotate(15deg);
@@ -224,14 +195,13 @@ button:hover {
 
 
 /* =========================
-   PHONE / SMALL SCREENS
+   PHONE
    ========================= */
 
 @media (max-width: 600px) {
 
     .container {
         width: 88%;
-
         padding: 45px 25px;
     }
 
@@ -239,52 +209,47 @@ button:hover {
         font-size: 36px;
     }
 
-    .small-text {
-        font-size: 15px;
-    }
-
     .message {
         font-size: 18px;
     }
 
-    button {
-        font-size: 17px;
-
-        padding: 13px 30px;
-    }
-
-
-    /* Smaller hearts on phones */
-
     .heart1 {
-        width: 40px;
+        width: 30px !important;
+        height: 30px !important;
     }
 
     .heart2 {
-        width: 55px;
+        width: 40px !important;
+        height: 40px !important;
     }
 
     .heart3 {
-        width: 25px;
+        width: 20px !important;
+        height: 20px !important;
     }
 
     .heart4 {
-        width: 40px;
+        width: 30px !important;
+        height: 30px !important;
     }
 
     .heart5 {
-        width: 50px;
+        width: 40px !important;
+        height: 40px !important;
     }
 
     .heart6 {
-        width: 30px;
+        width: 25px !important;
+        height: 25px !important;
     }
 
     .heart7 {
-        width: 22px;
+        width: 18px !important;
+        height: 18px !important;
     }
 
     .heart8 {
-        width: 28px;
+        width: 20px !important;
+        height: 20px !important;
     }
 }
